@@ -49,3 +49,16 @@ def winner(board)
     return nil
   end
 end
+
+
+def winner(board)
+    WIN_COMBINATIONS.each do |who_wins|
+    if who_wins.all? {|idx| board[idx] == "X"}
+      winner = "X"
+    elsif combo.all? {|idx| board[idx] == "O"}
+      winner = "O"
+    else
+    end
+  end
+  winner
+end
