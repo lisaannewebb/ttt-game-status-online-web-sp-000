@@ -43,4 +43,5 @@ end
 #If there is a winning combination OR no winner but a full board, the game is over. 
 
 def winner(board)
+  who_won
 end
