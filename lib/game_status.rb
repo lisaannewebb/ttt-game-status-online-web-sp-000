@@ -43,7 +43,5 @@ end
 #If there is a winning combination OR no winner but a full board, the game is over. 
 
 def winner(board)
-  if won?(board[0]) == 'X' || 'O'
-    return true
-   end
+  if won?(board[0]) == 'X'
 end
