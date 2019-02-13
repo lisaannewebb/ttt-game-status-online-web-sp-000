@@ -44,7 +44,8 @@ end
 
 def winner(board)
     who_wins = won?(board)
-    if board[who_wins[0]] # == 'X' || 'O'
+    if who_wins
+      board[who_wins[0]] # == 'X' || 'O'
     else
         nil
     end
