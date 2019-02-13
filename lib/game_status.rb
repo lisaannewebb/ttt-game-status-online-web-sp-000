@@ -50,3 +50,4 @@ def winner(board)
         nil
     end
 end
+#who_wins evaluates won? and returns a winner; looks at board to see if winner is an X or and O and returns that value. 
