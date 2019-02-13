@@ -42,11 +42,9 @@ def over?(board)
 end
 #If there is a winning combination OR no winner but a full board, the game is over. 
 
-
 def winner(board)
     who_wins = won?(board)
-    if who_wins
-        board[who_wins[0]] # == 'X' || 'O'
+    if board[who_wins[0]] # == 'X' || 'O'
     else
         nil
     end
