@@ -42,14 +42,6 @@ def over?(board)
 end
 #If there is a winning combination OR no winner but a full board, the game is over. 
 
-def winner(board)
-  if won?(board[0]) == 'X' || won?(board[0]) == 'O'
-    return winner
-  else
-    return nil
-  end
-end
-
 
 def winner(board)
     WIN_COMBINATIONS.each do |who_wins|
