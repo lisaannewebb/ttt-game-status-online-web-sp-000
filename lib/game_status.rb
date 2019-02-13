@@ -44,13 +44,10 @@ end
 
 
 def winner(board)
-  WIN_COMBINATIONS.each do |who_wins|
-    if who_wins.all? {|win| board[win] == "X"}
-      winner = "X"
-    elsif who_wins.all? {|win| board[win] == "O"}
-      winner = "O"
+    win_combo = won?(board)
+    if win_combo
+        board[win_combo[0]] # == 'X' || 'O'
     else
-      nil
+        nil
     end
-  end
 end
